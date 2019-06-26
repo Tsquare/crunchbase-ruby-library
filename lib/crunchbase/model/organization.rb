@@ -11,7 +11,7 @@ module Crunchbase::Model
                 :num_employees_min, :num_employees_max,
                 :total_funding_usd,
                 :stock_exchange, :stock_symbol,
-                :number_of_investments, :homepage_url,
+                :number_of_investments, :homepage_url, :contact_email,
                 :created_at, :updated_at
 
     attr_reader :primary_image, :founders, :current_team, :past_team, :board_members_and_advisors,
@@ -69,7 +69,7 @@ module Crunchbase::Model
         founded_on founded_on_trust_code is_closed closed_on closed_on_trust_code
         num_employees_min num_employees_max total_funding_usd
         stock_exchange stock_symbol
-        number_of_investments homepage_url
+        number_of_investments homepage_url contact_email
         created_at updated_at
       ]
     end
