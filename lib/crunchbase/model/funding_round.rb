@@ -10,6 +10,7 @@ module Crunchbase::Model
                 :announced_on, :announced_on_trust_code, :closed_on, :closed_on_trust_code,
                 :money_raised, :money_raised_currency_code, :money_raised_usd,
                 :target_money_raised, :target_money_raised_currency_code, :target_money_raised_usd,
+                :pre_money_raised, :pre_money_raised_currency_code, :pre_money_raised_usd
                 :created_at, :updated_at
 
     attr_reader :investments, :funded_organization, :images, :videos, :news
@@ -48,6 +49,7 @@ module Crunchbase::Model
         announced_on announced_on_trust_code closed_on closed_on_trust_code
         money_raised money_raised_currency_code money_raised_usd
         target_money_raised target_money_raised_currency_code target_money_raised_usd
+        pre_money_raised pre_money_raised_currency_code pre_money_raised_usd
         created_at updated_at
       ]
     end
